@@ -1,0 +1,295 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 3vh;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+
+@font-face {
+  font-family: "Roboto condensed bold";
+  src: url(assets/font/RobotoCondensed-Bold.ttf);
+  font-family: "Roboto condensed";
+  src: url(assets/font/RobotoCondensed-Regular.ttf);
+  font-family: "Comfortaa regular";
+  src: url(assets/font/Comfortaa-Regular.ttf);
+  font-family: "Comfortaa light";
+  src: url(assets/font/Comfortaa-Light.ttf);
+  font-family: "Comfortaa bold";
+  src: url(assets/font/Comfortaa-Bold.ttf);
+}
+
+/* dekstop device Or more than 600px */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffcc00;
+  padding: 0px;
+  margin: 0px;
+}
+
+head {
+  background-color: #ffcc00;
+}
+
+main {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  font-family: "roboto condensed";
+  margin: 20px 20px auto;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#Logo {
+  margin: 10px;
+  padding-left: 20px;
+  color: #ffb300;
+  font-size: 2rem;
+  cursor: pointer;
+  order: 0;
+}
+
+.Logo-bold {
+  font-family: "Roboto condensed";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  padding-inline-start: 0px;
+}
+
+nav,
+li,
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+  order: 1;
+}
+
+.button-navbar {
+  border-radius: 40px;
+  background-color: white;
+  color: #ffcc00;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.button-navbar:hover {
+  background-color: #ffcc00;
+  color: white;
+}
+
+p {
+  font-size: 2rem;
+  margin: 0px;
+}
+
+b {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 0px;
+  padding: 2px;
+}
+
+button {
+  border-radius: 40px;
+  border: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#button-pemberi {
+  background-color: white;
+  color: #ffcc00;
+}
+
+#button-pengemis {
+  background-color: #ffcc00;
+  color: white;
+}
+
+#artikel-satu {
+  font-family: "Comfortaa";
+  color: white;
+  height: 30rem;
+  display: inline-block;
+  margin: 30px 40px auto;
+}
+
+#greeting {
+  padding-block-start: 5%;
+  padding-block-end: 6%;
+  font-size: 4rem;
+}
+
+#artikel-dua {
+  font-family: "Comfortaa";
+  height: 35rem;
+  display: flex;
+  color: #ffb300;
+  background-color: white;
+}
+
+#artikel-tiga {
+  font-family: "Comfortaa";
+  height: 35rem;
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+#artikel-empat {
+  font-family: "Roboto condensed";
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.profile {
+  margin-top: 8rem;
+  text-align: center;
+  color: white;
+  padding: 2px;
+  width: 17rem;
+  height: 20rem;
+  background-color: #ffcc00;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.asideWord {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.image {
+  filter: blur(4px);
+  margin-top: -5rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 10px solid #ffcc00;
+  transition: ease 0.3s;
+}
+
+.image:hover {
+  filter: none;
+}
+
+.keteranganAside {
+  font-size: 1rem;
+}
+
+.left {
+  margin-block-start: 6em;
+  margin-inline-start: 2rem;
+  width: 50%;
+}
+
+.right {
+  margin-block-start: 6em;
+  margin-inline-start: 2rem;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+input[type="text"] {
+  background-color: #ffdf5c;
+  height: 6rem;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.artikelImage {
+  margin: 20px;
+  height: 22rem;
+}
+
+footer {
+  height: 100%;
+  font-family: "Roboto condensed";
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.parFooter {
+  font-size: 1rem;
+  padding: 20px;
+  color: white;
+}
+
+/* Responsive phone device */
+
+@media only screen and (max-width: 600px) {
+  * {
+    padding: 0px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #artikel-satu {
+    font-family: "Comfortaa";
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    margin: 30px 40px auto;
+  }
+
+  #greeting {
+    padding-block-start: 5%;
+    padding-block-end: 6%;
+    font-size: 4rem;
+  }
+
+  #artikel-dua {
+    font-family: "Comfortaa";
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #artikel-tiga {
+    font-family: "Comfortaa";
+    margin-top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
